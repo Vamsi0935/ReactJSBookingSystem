@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#root {
+  background-image: url("https://wallpapercave.com/wp/wp6539324.jpg");
+  backdrop-filter: none;
+}
+
+.form-container {
+  width: 38%;
+  padding: 4%;
+}
+
+.availableRooms {
+  width: 25%;
+  height: 30%;
+  padding: 3%;
+}
