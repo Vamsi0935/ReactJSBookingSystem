@@ -1,10 +1,10 @@
 import React from "react";
-import { initialState } from "../reducers/Reducer";
+//import { initialState } from "../reducers/Reducer";
 import { useSelector } from "react-redux";
 
 function RoomsInfo() {
   const state = useSelector((state) => state.counterReducer);
-  console.log(state.conferenceRoom, "room");
+  //console.log(state.conferenceRoom, "room");
   return (
     <div className="form-control availableRooms mt-4">
       <h3 style={{ textAlign: "left" }}>

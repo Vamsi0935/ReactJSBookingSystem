@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -20,8 +25,9 @@
 }
 
 #root {
-  background-image: url("https://wallpapercave.com/wp/wp6539324.jpg");
-  backdrop-filter: none;
+  background-image: url("https://png.pngtree.com/background/20230427/original/pngtree-people-at-a-conference-table-with-large-windows-picture-image_2497143.jpg");
+  background-repeat: none;
+  background-size: cover;
 }
 
 .form-container {

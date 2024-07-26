@@ -14,6 +14,11 @@ const updateRoom = (state, action) => {
     ? (state[action] = state[action] - 1)
     : initialState[action];
 };
+const deleteRoom = (state, action) => {
+  return ROOM_LIST.includes(action)
+    ? (state[action] = state[action] + 1)
+    : initialState[action];
+};
 const Reducer = createSlice({
   name: "room",
   initialState,
@@ -21,8 +26,11 @@ const Reducer = createSlice({
     update: (state, action) => {
       state[action.payload] = updateRoom(state, action.payload);
     },
+    deleteRoomData: (state, action) => {
+      state[action.payload] = deleteRoom(state, action.payload);
+    },
   },
 });
 
-export const { update } = Reducer.actions;
+export const { update, deleteRoomData } = Reducer.actions;
 export default Reducer.reducer;

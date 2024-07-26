@@ -8,15 +8,28 @@ import RoomsInfo from "./components/RoomsInfo";
 
 function App() {
   const [bookingInfo, setBookingInfo] = useState([]);
+  const [editData, setEditData] = useState(null);
+  const [type, setType] = useState("Create");
   return (
     <div className="App">
       <Header />
       <section className="d-flex justify-content-around">
-        <BookingForm setBookingInfo={setBookingInfo} />
+        <BookingForm
+          setBookingInfo={setBookingInfo}
+          editData={editData}
+          type={type}
+          setType={setType}
+        />
         <RoomsInfo />
         {/* <Counter /> */}
       </section>
-      <BookingInfo bookingInfo={bookingInfo} />
+      <BookingInfo
+        bookingInfo={bookingInfo}
+        setEditData={setEditData}
+        setType={setType}
+        type={type}
+        setBookingInfo={setBookingInfo}
+      />
     </div>
   );
 }
